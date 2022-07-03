@@ -974,14 +974,14 @@
     font-size: 16px;
   }
 }
-.button___72ILp:global(.__wab_instance) {
+.playButton:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   align-self: flex-start;
   margin-top: 26px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .button___72ILp:global(.__wab_instance) {
+  .playButton:global(.__wab_instance) {
     align-self: center;
   }
 }
@@ -1815,14 +1815,14 @@
     font-size: 16px;
   }
 }
-.button__gaZwM:global(.__wab_instance) {
+.playNowButton:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   align-self: flex-start;
   margin-top: 26px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .button__gaZwM:global(.__wab_instance) {
+  .playNowButton:global(.__wab_instance) {
     align-self: center;
   }
 }
@@ -2720,7 +2720,7 @@
     text-align: center;
   }
 }
-.button__xArIw:global(.__wab_instance) {
+.button:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   margin-top: 26px;

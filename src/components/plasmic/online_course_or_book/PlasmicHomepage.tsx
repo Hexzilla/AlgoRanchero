@@ -102,6 +102,7 @@ export type PlasmicHomepage__OverridesType = {
   listIteam5?: p.Flex<"li">;
   listIteam6?: p.Flex<"li">;
   listIteam7?: p.Flex<"li">;
+  playButton?: p.Flex<typeof Button>;
   bannerImage2?: p.Flex<"div">;
   imageMarketing2?: p.Flex<typeof p.PlasmicImg>;
   section4?: p.Flex<"section">;
@@ -123,6 +124,7 @@ export type PlasmicHomepage__OverridesType = {
   listIteam11?: p.Flex<"li">;
   listIteam12?: p.Flex<"li">;
   listIteam13?: p.Flex<"li">;
+  playNowButton?: p.Flex<typeof Button>;
   bannerImage3?: p.Flex<"div">;
   imageMarketing3?: p.Flex<typeof p.PlasmicImg>;
   section7?: p.Flex<"section">;
@@ -136,6 +138,7 @@ export type PlasmicHomepage__OverridesType = {
   avtarContent?: p.Flex<"div">;
   avatarImage?: p.Flex<"div">;
   section9?: p.Flex<"section">;
+  button?: p.Flex<typeof Button>;
   svg?: p.Flex<"svg">;
   footer?: p.Flex<"footer">;
   footerLogo?: p.Flex<"div">;
@@ -724,9 +727,11 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
 
                           <Button
+                            data-plasmic-name={"playButton"}
+                            data-plasmic-override={overrides.playButton}
                             className={classNames(
                               "__wab_instance",
-                              sty.button___72ILp
+                              sty.playButton
                             )}
                             color={"red" as const}
                             link={"/play" as const}
@@ -1232,7 +1237,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   </div>
 
                   <Button
-                    className={classNames("__wab_instance", sty.button__gaZwM)}
+                    data-plasmic-name={"playNowButton"}
+                    data-plasmic-override={overrides.playNowButton}
+                    className={classNames("__wab_instance", sty.playNowButton)}
                     color={"red" as const}
                     link={"/play" as const}
                     shape={"rounded" as const}
@@ -1714,7 +1721,9 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
 
               <Button
-                className={classNames("__wab_instance", sty.button__xArIw)}
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
+                className={classNames("__wab_instance", sty.button)}
                 color={"white" as const}
                 endIcon={
                   <_227601RightArrowIconsvgIcon
@@ -2047,6 +2056,7 @@ const PlasmicDescendants = {
     "listIteam5",
     "listIteam6",
     "listIteam7",
+    "playButton",
     "bannerImage2",
     "imageMarketing2",
     "section4",
@@ -2068,6 +2078,7 @@ const PlasmicDescendants = {
     "listIteam11",
     "listIteam12",
     "listIteam13",
+    "playNowButton",
     "bannerImage3",
     "imageMarketing3",
     "section7",
@@ -2081,6 +2092,7 @@ const PlasmicDescendants = {
     "avtarContent",
     "avatarImage",
     "section9",
+    "button",
     "svg",
     "footer",
     "footerLogo",
@@ -2163,6 +2175,7 @@ const PlasmicDescendants = {
     "listIteam5",
     "listIteam6",
     "listIteam7",
+    "playButton",
     "bannerImage2",
     "imageMarketing2"
   ],
@@ -2177,6 +2190,7 @@ const PlasmicDescendants = {
     "listIteam5",
     "listIteam6",
     "listIteam7",
+    "playButton",
     "bannerImage2",
     "imageMarketing2"
   ],
@@ -2207,6 +2221,7 @@ const PlasmicDescendants = {
   listIteam5: ["listIteam5"],
   listIteam6: ["listIteam6"],
   listIteam7: ["listIteam7"],
+  playButton: ["playButton"],
   bannerImage2: ["bannerImage2", "imageMarketing2"],
   imageMarketing2: ["imageMarketing2"],
   section4: ["section4", "testimonialText", "position"],
@@ -2229,6 +2244,7 @@ const PlasmicDescendants = {
     "listIteam11",
     "listIteam12",
     "listIteam13",
+    "playNowButton",
     "bannerImage3",
     "imageMarketing3"
   ],
@@ -2243,6 +2259,7 @@ const PlasmicDescendants = {
     "listIteam11",
     "listIteam12",
     "listIteam13",
+    "playNowButton",
     "bannerImage3",
     "imageMarketing3"
   ],
@@ -2273,6 +2290,7 @@ const PlasmicDescendants = {
   listIteam11: ["listIteam11"],
   listIteam12: ["listIteam12"],
   listIteam13: ["listIteam13"],
+  playNowButton: ["playNowButton"],
   bannerImage3: ["bannerImage3", "imageMarketing3"],
   imageMarketing3: ["imageMarketing3"],
   section7: [
@@ -2293,7 +2311,8 @@ const PlasmicDescendants = {
   section8: ["section8", "avtarContent", "avatarImage"],
   avtarContent: ["avtarContent"],
   avatarImage: ["avatarImage"],
-  section9: ["section9", "svg"],
+  section9: ["section9", "button", "svg"],
+  button: ["button", "svg"],
   svg: ["svg"],
   footer: [
     "footer",
@@ -2352,6 +2371,7 @@ type NodeDefaultElementType = {
   listIteam5: "li";
   listIteam6: "li";
   listIteam7: "li";
+  playButton: typeof Button;
   bannerImage2: "div";
   imageMarketing2: typeof p.PlasmicImg;
   section4: "section";
@@ -2373,6 +2393,7 @@ type NodeDefaultElementType = {
   listIteam11: "li";
   listIteam12: "li";
   listIteam13: "li";
+  playNowButton: typeof Button;
   bannerImage3: "div";
   imageMarketing3: typeof p.PlasmicImg;
   section7: "section";
@@ -2386,6 +2407,7 @@ type NodeDefaultElementType = {
   avtarContent: "div";
   avatarImage: "div";
   section9: "section";
+  button: typeof Button;
   svg: "svg";
   footer: "footer";
   footerLogo: "div";
@@ -2490,6 +2512,7 @@ export const PlasmicHomepage = Object.assign(
     listIteam5: makeNodeComponent("listIteam5"),
     listIteam6: makeNodeComponent("listIteam6"),
     listIteam7: makeNodeComponent("listIteam7"),
+    playButton: makeNodeComponent("playButton"),
     bannerImage2: makeNodeComponent("bannerImage2"),
     imageMarketing2: makeNodeComponent("imageMarketing2"),
     section4: makeNodeComponent("section4"),
@@ -2511,6 +2534,7 @@ export const PlasmicHomepage = Object.assign(
     listIteam11: makeNodeComponent("listIteam11"),
     listIteam12: makeNodeComponent("listIteam12"),
     listIteam13: makeNodeComponent("listIteam13"),
+    playNowButton: makeNodeComponent("playNowButton"),
     bannerImage3: makeNodeComponent("bannerImage3"),
     imageMarketing3: makeNodeComponent("imageMarketing3"),
     section7: makeNodeComponent("section7"),
@@ -2524,6 +2548,7 @@ export const PlasmicHomepage = Object.assign(
     avtarContent: makeNodeComponent("avtarContent"),
     avatarImage: makeNodeComponent("avatarImage"),
     section9: makeNodeComponent("section9"),
+    button: makeNodeComponent("button"),
     svg: makeNodeComponent("svg"),
     footer: makeNodeComponent("footer"),
     footerLogo: makeNodeComponent("footerLogo"),

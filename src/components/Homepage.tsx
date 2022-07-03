@@ -23,6 +23,15 @@ function Homepage_(props: HomepageProps, ref: HTMLElementRefOf<"div">) {
       startPlayButton={{
         onClick: (e) => handleStartPlay(e),
       }}
+      playButton={{
+        onClick: (e) => handleStartPlay(e),
+      }}
+      playGameButton={{
+        onClick: (e) => handleStartPlay(e),
+      }}
+      playNowButton={{
+        onClick: (e) => handleStartPlay(e),
+      }}
     />
   );
 }
