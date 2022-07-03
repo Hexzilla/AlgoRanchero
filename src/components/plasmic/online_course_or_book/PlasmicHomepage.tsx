@@ -78,6 +78,7 @@ export type PlasmicHomepage__OverridesType = {
   link2?: p.Flex<"a">;
   link4?: p.Flex<"a">;
   navBarButtonBlock?: p.Flex<"div">;
+  startPlayButton?: p.Flex<typeof Button>;
   btnText?: p.Flex<"div">;
   section1?: p.Flex<"section">;
   container?: p.Flex<"div">;
@@ -86,6 +87,7 @@ export type PlasmicHomepage__OverridesType = {
   contentBlock?: p.Flex<"div">;
   mainHeading?: p.Flex<"h1">;
   peraBanner?: p.Flex<"p">;
+  playGameButton?: p.Flex<typeof Button>;
   section2?: p.Flex<"section">;
   subHeading?: p.Flex<"h2">;
   logoContainer?: p.Flex<"div">;
@@ -283,7 +285,9 @@ function PlasmicHomepage__RenderFunc(props: {
               className={classNames(projectcss.all, sty.navBarButtonBlock)}
             >
               <Button
-                className={classNames("__wab_instance", sty.button__jlXqN)}
+                data-plasmic-name={"startPlayButton"}
+                data-plasmic-override={overrides.startPlayButton}
+                className={classNames("__wab_instance", sty.startPlayButton)}
                 color={"red" as const}
                 link={"/play" as const}
                 shape={"rounded" as const}
@@ -395,9 +399,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                       >
                         <Button
+                          data-plasmic-name={"playGameButton"}
+                          data-plasmic-override={overrides.playGameButton}
                           className={classNames(
                             "__wab_instance",
-                            sty.button__yjxN
+                            sty.playGameButton
                           )}
                           color={"red" as const}
                           link={"/play" as const}
@@ -2017,6 +2023,7 @@ const PlasmicDescendants = {
     "link2",
     "link4",
     "navBarButtonBlock",
+    "startPlayButton",
     "btnText",
     "section1",
     "container",
@@ -2025,6 +2032,7 @@ const PlasmicDescendants = {
     "contentBlock",
     "mainHeading",
     "peraBanner",
+    "playGameButton",
     "section2",
     "subHeading",
     "logoContainer",
@@ -2096,6 +2104,7 @@ const PlasmicDescendants = {
     "link2",
     "link4",
     "navBarButtonBlock",
+    "startPlayButton",
     "btnText"
   ],
   logoWrap: ["logoWrap", "logo"],
@@ -2104,7 +2113,8 @@ const PlasmicDescendants = {
   link3: ["link3"],
   link2: ["link2"],
   link4: ["link4"],
-  navBarButtonBlock: ["navBarButtonBlock", "btnText"],
+  navBarButtonBlock: ["navBarButtonBlock", "startPlayButton", "btnText"],
+  startPlayButton: ["startPlayButton", "btnText"],
   btnText: ["btnText"],
   section1: [
     "section1",
@@ -2113,7 +2123,8 @@ const PlasmicDescendants = {
     "bannerImage",
     "contentBlock",
     "mainHeading",
-    "peraBanner"
+    "peraBanner",
+    "playGameButton"
   ],
   container: [
     "container",
@@ -2121,19 +2132,22 @@ const PlasmicDescendants = {
     "bannerImage",
     "contentBlock",
     "mainHeading",
-    "peraBanner"
+    "peraBanner",
+    "playGameButton"
   ],
   flexBox: [
     "flexBox",
     "bannerImage",
     "contentBlock",
     "mainHeading",
-    "peraBanner"
+    "peraBanner",
+    "playGameButton"
   ],
   bannerImage: ["bannerImage"],
-  contentBlock: ["contentBlock", "mainHeading", "peraBanner"],
+  contentBlock: ["contentBlock", "mainHeading", "peraBanner", "playGameButton"],
   mainHeading: ["mainHeading"],
   peraBanner: ["peraBanner"],
+  playGameButton: ["playGameButton"],
   section2: ["section2", "subHeading", "logoContainer"],
   subHeading: ["subHeading"],
   logoContainer: ["logoContainer"],
@@ -2314,6 +2328,7 @@ type NodeDefaultElementType = {
   link2: "a";
   link4: "a";
   navBarButtonBlock: "div";
+  startPlayButton: typeof Button;
   btnText: "div";
   section1: "section";
   container: "div";
@@ -2322,6 +2337,7 @@ type NodeDefaultElementType = {
   contentBlock: "div";
   mainHeading: "h1";
   peraBanner: "p";
+  playGameButton: typeof Button;
   section2: "section";
   subHeading: "h2";
   logoContainer: "div";
@@ -2450,6 +2466,7 @@ export const PlasmicHomepage = Object.assign(
     link2: makeNodeComponent("link2"),
     link4: makeNodeComponent("link4"),
     navBarButtonBlock: makeNodeComponent("navBarButtonBlock"),
+    startPlayButton: makeNodeComponent("startPlayButton"),
     btnText: makeNodeComponent("btnText"),
     section1: makeNodeComponent("section1"),
     container: makeNodeComponent("container"),
@@ -2458,6 +2475,7 @@ export const PlasmicHomepage = Object.assign(
     contentBlock: makeNodeComponent("contentBlock"),
     mainHeading: makeNodeComponent("mainHeading"),
     peraBanner: makeNodeComponent("peraBanner"),
+    playGameButton: makeNodeComponent("playGameButton"),
     section2: makeNodeComponent("section2"),
     subHeading: makeNodeComponent("subHeading"),
     logoContainer: makeNodeComponent("logoContainer"),
