@@ -35,7 +35,7 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
     setLoading(true);
 
     const transaction = await sendAssets(receiver);
-    console.log('response', transaction);
+    console.log('transaction', transaction);
     if (transaction) {
       unityContext.send('AccessController', 'InsertToken');
       notification.info(title, `The ticket has been used successfully.\n Transaction: ${transaction}`);
