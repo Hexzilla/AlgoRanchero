@@ -12,7 +12,6 @@ function Homepage_(props: HomepageProps, ref: HTMLElementRefOf<"div">) {
   const history = useHistory();
 
   const handleStartPlay = (e: any) => {
-    console.log('handleStartPlay', e)
     e.preventDefault();
     history.push("/play");
   };

@@ -81,17 +81,20 @@ const useAssets = () => {
           console.log('txn', txn)
           const signedTxn = await wallet.signTransaction(txn.toByte());
           console.log('signedTxn', signedTxn)
-          return await algodClient.sendRawTransaction(signedTxn.blob).do();
+          //return await algodClient.sendRawTransaction(signedTxn.blob).do();
 
-          /*const traxUrl = `${BASE_URL}/v2/transactions`;
-          const data = Buffer.from(signedTxn.blob);
-          const payload = Buffer.from(new Uint8Array(Buffer.from(JSON.stringify(data))))
-          const traxRes = await axios.post(traxUrl, payload, {
+          const traxUrl = `${BASE_URL}/v2/transactions`;
+          const traxRes = await axios.post(traxUrl, signedTxn.blob, {
             headers: {
-              'Content-Type': 'application/json',
+              'Content-Type': 'application/x-binary',
             },
           });
-          console.log('traxRes', traxRes)*/
+          console.log('traxRes', traxRes)
+
+          const txId = traxRes.data.txId;
+          //await algosdk.waitForConfirmation(algodClient, txId, 4);
+          
+          return txId;
 
         } catch (error) {
           console.error(error);
