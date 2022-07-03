@@ -184,7 +184,7 @@
     margin-left: 0px;
   }
 }
-.button__nNmAd:global(.__wab_instance) {
+.syncWallet:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
 }
@@ -261,7 +261,7 @@
 .img__v0TX5 > .__wab_img-spacer > img {
   object-fit: cover;
 }
-.button__uz0SB:global(.__wab_instance) {
+.useTicket:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   margin-top: 49px;

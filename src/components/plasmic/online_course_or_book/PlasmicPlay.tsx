@@ -79,9 +79,11 @@ export type PlasmicPlay__OverridesType = {
   link2?: p.Flex<"a">;
   link4?: p.Flex<"a">;
   navBarButtonBlock?: p.Flex<"div">;
+  syncWallet?: p.Flex<typeof Button>;
   btnText?: p.Flex<"div">;
   section1?: p.Flex<"section">;
   container?: p.Flex<"div">;
+  useTicket?: p.Flex<typeof Button>;
   flexBox?: p.Flex<"div">;
   bannerImage?: p.Flex<"div">;
   contentBlock?: p.Flex<"div">;
@@ -271,7 +273,7 @@ function PlasmicPlay__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.link4
                   )}
-                  href={"#" as const}
+                  href={"https://ab2.gallery/asset/794691991" as const}
                 >
                   {"Store"}
                 </a>
@@ -284,7 +286,9 @@ function PlasmicPlay__RenderFunc(props: {
               className={classNames(projectcss.all, sty.navBarButtonBlock)}
             >
               <Button
-                className={classNames("__wab_instance", sty.button__nNmAd)}
+                data-plasmic-name={"syncWallet"}
+                data-plasmic-override={overrides.syncWallet}
+                className={classNames("__wab_instance", sty.syncWallet)}
                 color={"red" as const}
                 shape={"rounded" as const}
               >
@@ -332,7 +336,9 @@ function PlasmicPlay__RenderFunc(props: {
               />
 
               <Button
-                className={classNames("__wab_instance", sty.button__uz0SB)}
+                data-plasmic-name={"useTicket"}
+                data-plasmic-override={overrides.useTicket}
+                className={classNames("__wab_instance", sty.useTicket)}
               >
                 {"Use Ticket"}
               </Button>
@@ -431,6 +437,9 @@ function PlasmicPlay__RenderFunc(props: {
                               sty.button___8EGZf
                             )}
                             color={"red" as const}
+                            link={
+                              "https://ab2.gallery/asset/794691991" as const
+                            }
                             shape={"rounded" as const}
                             showEndIcon={true}
                           >
@@ -441,7 +450,7 @@ function PlasmicPlay__RenderFunc(props: {
                                 sty.text__zdO0Z
                               )}
                             >
-                              {"Play the Game"}
+                              {"Get A Ticket"}
                             </div>
                           </Button>
                         </div>
@@ -2074,9 +2083,11 @@ const PlasmicDescendants = {
     "link2",
     "link4",
     "navBarButtonBlock",
+    "syncWallet",
     "btnText",
     "section1",
     "container",
+    "useTicket",
     "flexBox",
     "bannerImage",
     "contentBlock",
@@ -2153,6 +2164,7 @@ const PlasmicDescendants = {
     "link2",
     "link4",
     "navBarButtonBlock",
+    "syncWallet",
     "btnText"
   ],
   logoWrap: ["logoWrap", "logo"],
@@ -2161,11 +2173,13 @@ const PlasmicDescendants = {
   link3: ["link3"],
   link2: ["link2"],
   link4: ["link4"],
-  navBarButtonBlock: ["navBarButtonBlock", "btnText"],
+  navBarButtonBlock: ["navBarButtonBlock", "syncWallet", "btnText"],
+  syncWallet: ["syncWallet", "btnText"],
   btnText: ["btnText"],
   section1: [
     "section1",
     "container",
+    "useTicket",
     "flexBox",
     "bannerImage",
     "contentBlock",
@@ -2174,12 +2188,14 @@ const PlasmicDescendants = {
   ],
   container: [
     "container",
+    "useTicket",
     "flexBox",
     "bannerImage",
     "contentBlock",
     "mainHeading",
     "peraBanner"
   ],
+  useTicket: ["useTicket"],
   flexBox: [
     "flexBox",
     "bannerImage",
@@ -2371,9 +2387,11 @@ type NodeDefaultElementType = {
   link2: "a";
   link4: "a";
   navBarButtonBlock: "div";
+  syncWallet: typeof Button;
   btnText: "div";
   section1: "section";
   container: "div";
+  useTicket: typeof Button;
   flexBox: "div";
   bannerImage: "div";
   contentBlock: "div";
@@ -2507,9 +2525,11 @@ export const PlasmicPlay = Object.assign(
     link2: makeNodeComponent("link2"),
     link4: makeNodeComponent("link4"),
     navBarButtonBlock: makeNodeComponent("navBarButtonBlock"),
+    syncWallet: makeNodeComponent("syncWallet"),
     btnText: makeNodeComponent("btnText"),
     section1: makeNodeComponent("section1"),
     container: makeNodeComponent("container"),
+    useTicket: makeNodeComponent("useTicket"),
     flexBox: makeNodeComponent("flexBox"),
     bannerImage: makeNodeComponent("bannerImage"),
     contentBlock: makeNodeComponent("contentBlock"),

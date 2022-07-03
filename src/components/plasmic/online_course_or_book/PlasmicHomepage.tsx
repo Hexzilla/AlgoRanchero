@@ -270,7 +270,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.link4
                   )}
-                  href={"#" as const}
+                  href={"https://ab2.gallery/asset/794691991" as const}
                 >
                   {"Store"}
                 </a>

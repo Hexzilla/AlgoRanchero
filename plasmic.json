@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -24,7 +24,7 @@
     {
       "projectId": "gemQPJSCVibKN2tjcS3BQj",
       "projectApiToken": "ui682UKPorPcHvAYcvJ2J0HmdOb5FwXX7gFSenbccSlh5wEEvhaq6EMqCkrllVmTXv4KqQWB0YGzRTiA",
-      "projectName": "Online course or book",
+      "projectName": "Algo Ranchero",
       "version": "latest",
       "cssFilePath": "plasmic/online_course_or_book/plasmic_online_course_or_book.module.css",
       "components": [
