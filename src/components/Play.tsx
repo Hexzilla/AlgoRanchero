@@ -1,10 +1,11 @@
 import * as React from "react";
-import Unity, { UnityContext } from 'react-unity-webgl';
+import { UnityContext } from 'react-unity-webgl';
 import {
   PlasmicPlay,
   DefaultPlayProps,
 } from "./plasmic/online_course_or_book/PlasmicPlay";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
+import * as notification from './Notification';
 import useAssets from "../hooks/useAssets";
 import useWallet from "../hooks/useWallet";
 
@@ -20,26 +21,34 @@ const unityContext = new UnityContext({
 });
 
 function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
+  const [loading, setLoading] = React.useState(false);
   const { account } = useWallet();
   const { sendAssets } = useAssets();
 
   const handleUseTicket = async () => {
     console.log("handleUseTicket");
     if (!account) {
+      notification.error("Algo", "Please connect your wallet");
       return;
     }
+    setLoading(true);
+    
     const response = await sendAssets(receiver);
     console.log('response', response);
     if (response) {
       unityContext.send('AccessController', 'InsertToken');
     }
+    setLoading(false);
   };
 
   return (
     <PlasmicPlay
       root={{ ref }}
       {...props}
-      useTicket={{ onClick: () => handleUseTicket() }}
+      useTicket={{ 
+        isDisabled: loading,
+        onClick: () => handleUseTicket() 
+      }}
     />
   );
 }

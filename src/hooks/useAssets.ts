@@ -4,7 +4,12 @@ import axios from "axios";
 import { SignedTx } from "@randlabs/myalgo-connect";
 import { useAlgoContext } from "./useAlgoContext";
 
-const algodClient = new algosdk.Algodv2("", "https://node.algoexplorer.io/", "");
+const BASE_URL = "https://node.algoexplorerapi.io";
+const token = {
+  'Access-Control-Allow-Origin': '*',
+  'X-API-Key': '9RteuDnvR06kVoU1tMdE69Gxajzb4479ajWR7FKe',
+};
+const algodClient = new algosdk.Algodv2("", "https://mainnet-algorand.api.purestake.io/ps2", "", token);
 
 const useAssets = () => {
   const { wallet, account } = useAlgoContext()!;
@@ -45,7 +50,7 @@ const useAssets = () => {
         amount: number
       ) => {
         try {
-          const url = "https://node.algoexplorerapi.io/v2/transactions/params";
+          const url = `${BASE_URL}/v2/transactions/params`;
           const res = await axios.get(url, {
             headers: {
               "Content-Type": "application/json",
@@ -73,8 +78,21 @@ const useAssets = () => {
               suggestedParams,
             }
           );
+          console.log('txn', txn)
           const signedTxn = await wallet.signTransaction(txn.toByte());
+          console.log('signedTxn', signedTxn)
           return await algodClient.sendRawTransaction(signedTxn.blob).do();
+
+          /*const traxUrl = `${BASE_URL}/v2/transactions`;
+          const data = Buffer.from(signedTxn.blob);
+          const payload = Buffer.from(new Uint8Array(Buffer.from(JSON.stringify(data))))
+          const traxRes = await axios.post(traxUrl, payload, {
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          });
+          console.log('traxRes', traxRes)*/
+
         } catch (error) {
           console.error(error);
           return null;
