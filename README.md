@@ -33,7 +33,7 @@ One ticket is all you need. It doesn't get burned or destroyed when you access t
 You'll be able to see the world evolve and grow as you have access to the untested wilderness and rough towns that will become the final game-world.
 Enjoy this exclusive access to the behind-the-scenes peek into how this game is coming together. 
 
-![need](https://user-images.githubusercontent.com/2120817/177050656-b1ea7761-00c9-40b3-9c0b-ec208b454eba.png)
+![need_ticket](https://user-images.githubusercontent.com/2120817/177050714-1ae889be-8367-4c0c-9d70-31b6cda3b8c7.jpg)
 ![ticket_to_ride](https://user-images.githubusercontent.com/2120817/177050183-2d4aba8a-6933-42d8-b252-52e43de62c36.png)
 
 ### Built with:
