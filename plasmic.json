@@ -67,6 +67,19 @@
           "cssFilePath": "plasmic/online_course_or_book/PlasmicPlay.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "nVpiZ8Ilzb",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "gemQPJSCVibKN2tjcS3BQj",
+          "renderModuleFilePath": "plasmic/algo_ranchero/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/algo_ranchero/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

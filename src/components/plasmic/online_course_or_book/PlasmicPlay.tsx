@@ -31,6 +31,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Navbar from "../../Navbar"; // plasmic-import: nVpiZ8Ilzb/component
 import Button from "../../Button"; // plasmic-import: zAyab0Saj8gwK-/component
 
 import { useScreenVariants as useScreenVariantsniByZeNd2UzauJ } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: NiBYZeNd2UzauJ/globalVariant
@@ -43,7 +44,6 @@ import sty from "./PlasmicPlay.module.css"; // plasmic-import: cyPzhZcfbnL/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: H6IPjSst5JB-0J/icon
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: p88DWBUZGglkig/icon
 import _227601RightArrowIconsvgIcon from "./icons/PlasmicIcon___227601RightArrowIconsvg"; // plasmic-import: W8HTR3EfJvw0K1/icon
-import logoAlgoRancheroSmallpngDmICtonR7 from "./images/logoAlgoRancheroSmallpng.png"; // plasmic-import: dmICtonR7/picture
 import unityPlaceholderpngJrtDf8Gx9 from "./images/unityPlaceholderpng.png"; // plasmic-import: jrtDF8Gx9/picture
 import ticketpngLthswhDjs from "./images/ticketpng.png"; // plasmic-import: LthswhDjs/picture
 import westworldpngJ1JTeMPo from "./images/westworldpng.png"; // plasmic-import: J1jTeM-po/picture
@@ -54,6 +54,7 @@ import suelpngLk9JTWb7 from "./images/suelpng.png"; // plasmic-import: lk9j-tWb7
 import image7FWZByIpaTsn0X from "./images/image7.png"; // plasmic-import: fW-ZByIPATsn0x/picture
 import tradingpngA6GNyNdcC from "./images/tradingpng.png"; // plasmic-import: A6gNYNdcC/picture
 import image40BZjm4KxMf99Q from "./images/image4.png"; // plasmic-import: 0BZjm4kx-mf99q/picture
+import logoAlgoRancheroSmallpngDmICtonR7 from "./images/logoAlgoRancheroSmallpng.png"; // plasmic-import: dmICtonR7/picture
 import icons8TwittersvgJfiQjlzmWcrIml from "./images/icons8Twittersvg.svg"; // plasmic-import: JfiQjlzmWCRIml/picture
 import icons8FacebooksvgOTwwNjgjUc06BX from "./images/icons8Facebooksvg.svg"; // plasmic-import: oTwwNJGJUc06bX/picture
 import icons8YoutubesvgCqDaWkEk1Dpk60 from "./images/icons8Youtubesvg.svg"; // plasmic-import: CqDaWKEk1dpk60/picture
@@ -71,16 +72,7 @@ export const PlasmicPlay__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPlay__OverridesType = {
   root?: p.Flex<"div">;
-  navBar?: p.Flex<"header">;
-  logoWrap?: p.Flex<"div">;
-  logo?: p.Flex<typeof p.PlasmicImg>;
-  navmenu?: p.Flex<"div">;
-  link3?: p.Flex<"a">;
-  link2?: p.Flex<"a">;
-  link4?: p.Flex<"a">;
-  navBarButtonBlock?: p.Flex<"div">;
-  syncWallet?: p.Flex<typeof Button>;
-  btnText?: p.Flex<"div">;
+  navbar?: p.Flex<typeof Navbar>;
   section1?: p.Flex<"section">;
   container?: p.Flex<"div">;
   useTicket?: p.Flex<typeof Button>;
@@ -199,113 +191,11 @@ function PlasmicPlay__RenderFunc(props: {
             sty.root
           )}
         >
-          <header
-            data-plasmic-name={"navBar"}
-            data-plasmic-override={overrides.navBar}
-            className={classNames(projectcss.all, sty.navBar)}
-          >
-            <div
-              data-plasmic-name={"logoWrap"}
-              data-plasmic-override={overrides.logoWrap}
-              className={classNames(projectcss.all, sty.logoWrap)}
-            >
-              <p.PlasmicImg
-                data-plasmic-name={"logo"}
-                data-plasmic-override={overrides.logo}
-                alt={""}
-                className={classNames(sty.logo)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"220px" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: logoAlgoRancheroSmallpngDmICtonR7,
-                  fullWidth: 186,
-                  fullHeight: 80,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-
-            {true ? (
-              <div
-                data-plasmic-name={"navmenu"}
-                data-plasmic-override={overrides.navmenu}
-                className={classNames(projectcss.all, sty.navmenu)}
-              >
-                <a
-                  data-plasmic-name={"link3"}
-                  data-plasmic-override={overrides.link3}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link3
-                  )}
-                  href={"/" as const}
-                >
-                  {"Home"}
-                </a>
-
-                <a
-                  data-plasmic-name={"link2"}
-                  data-plasmic-override={overrides.link2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link2
-                  )}
-                  href={"#" as const}
-                >
-                  {"Story"}
-                </a>
-
-                <a
-                  data-plasmic-name={"link4"}
-                  data-plasmic-override={overrides.link4}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link4
-                  )}
-                  href={"https://ab2.gallery/asset/794691991" as const}
-                >
-                  {"Store"}
-                </a>
-              </div>
-            ) : null}
-
-            <div
-              data-plasmic-name={"navBarButtonBlock"}
-              data-plasmic-override={overrides.navBarButtonBlock}
-              className={classNames(projectcss.all, sty.navBarButtonBlock)}
-            >
-              <Button
-                data-plasmic-name={"syncWallet"}
-                data-plasmic-override={overrides.syncWallet}
-                className={classNames("__wab_instance", sty.syncWallet)}
-                color={"red" as const}
-                shape={"rounded" as const}
-              >
-                <div
-                  data-plasmic-name={"btnText"}
-                  data-plasmic-override={overrides.btnText}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.btnText
-                  )}
-                >
-                  {"Sync Wallet"}
-                </div>
-              </Button>
-            </div>
-          </header>
+          <Navbar
+            data-plasmic-name={"navbar"}
+            data-plasmic-override={overrides.navbar}
+            className={classNames("__wab_instance", sty.navbar)}
+          />
 
           <section
             data-plasmic-name={"section1"}
@@ -2075,16 +1965,7 @@ function PlasmicPlay__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "navBar",
-    "logoWrap",
-    "logo",
-    "navmenu",
-    "link3",
-    "link2",
-    "link4",
-    "navBarButtonBlock",
-    "syncWallet",
-    "btnText",
+    "navbar",
     "section1",
     "container",
     "useTicket",
@@ -2155,27 +2036,7 @@ const PlasmicDescendants = {
     "youtube",
     "vimeo"
   ],
-  navBar: [
-    "navBar",
-    "logoWrap",
-    "logo",
-    "navmenu",
-    "link3",
-    "link2",
-    "link4",
-    "navBarButtonBlock",
-    "syncWallet",
-    "btnText"
-  ],
-  logoWrap: ["logoWrap", "logo"],
-  logo: ["logo"],
-  navmenu: ["navmenu", "link3", "link2", "link4"],
-  link3: ["link3"],
-  link2: ["link2"],
-  link4: ["link4"],
-  navBarButtonBlock: ["navBarButtonBlock", "syncWallet", "btnText"],
-  syncWallet: ["syncWallet", "btnText"],
-  btnText: ["btnText"],
+  navbar: ["navbar"],
   section1: [
     "section1",
     "container",
@@ -2379,16 +2240,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  navBar: "header";
-  logoWrap: "div";
-  logo: typeof p.PlasmicImg;
-  navmenu: "div";
-  link3: "a";
-  link2: "a";
-  link4: "a";
-  navBarButtonBlock: "div";
-  syncWallet: typeof Button;
-  btnText: "div";
+  navbar: typeof Navbar;
   section1: "section";
   container: "div";
   useTicket: typeof Button;
@@ -2517,16 +2369,7 @@ export const PlasmicPlay = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    navBar: makeNodeComponent("navBar"),
-    logoWrap: makeNodeComponent("logoWrap"),
-    logo: makeNodeComponent("logo"),
-    navmenu: makeNodeComponent("navmenu"),
-    link3: makeNodeComponent("link3"),
-    link2: makeNodeComponent("link2"),
-    link4: makeNodeComponent("link4"),
-    navBarButtonBlock: makeNodeComponent("navBarButtonBlock"),
-    syncWallet: makeNodeComponent("syncWallet"),
-    btnText: makeNodeComponent("btnText"),
+    navbar: makeNodeComponent("navbar"),
     section1: makeNodeComponent("section1"),
     container: makeNodeComponent("container"),
     useTicket: makeNodeComponent("useTicket"),
