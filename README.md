@@ -2,6 +2,8 @@
 # Algo Ranchero
 ### Play as the hero in your own western adventure! 
 
+![Screen Shot 2022-07-03 at 1 14 44 PM](https://user-images.githubusercontent.com/2120817/177050295-4c421349-7b59-4d4b-a675-77d0c27777c9.png)
+
 **Algo Ranchero** is the first open-world play-to-earn Western Adventure game. 
 It uses the Algorand blockchain and wallet to let players keep their loot and trade with others. As the game expands, the world will grow along with the adventure. So get a **Ticket to Ride** and saddle up to **Algo Ranchero!** 
 
@@ -31,4 +33,18 @@ One ticket is all you need. It doesn't get burned or destroyed when you access t
 You'll be able to see the world evolve and grow as you have access to the untested wilderness and rough towns that will become the final game-world.
 Enjoy this exclusive access to the behind-the-scenes peek into how this game is coming together. 
 
+![need](https://user-images.githubusercontent.com/2120817/177050656-b1ea7761-00c9-40b3-9c0b-ec208b454eba.png)
 ![ticket_to_ride](https://user-images.githubusercontent.com/2120817/177050183-2d4aba8a-6933-42d8-b252-52e43de62c36.png)
+
+### Built with:
+![algo_logo](https://user-images.githubusercontent.com/2120817/177050390-22ebaf1e-90ea-4696-a8ef-73e739a9ab0f.png)
+![unity_logo](https://user-images.githubusercontent.com/2120817/177050471-2f2f9126-1692-43cc-9750-0eaf4e99a095.jpg)
+![react_logo](https://user-images.githubusercontent.com/2120817/177050529-642e715c-08ae-4e05-8556-6fe2fd8c930c.jpg)
+
+### Inspired by:
+![westworld](https://user-images.githubusercontent.com/2120817/177050556-8766cb82-00f6-42c8-be2c-2e8eb5893d08.png)
+![red_dead](https://user-images.githubusercontent.com/2120817/177050604-5c2efaac-99b8-4c7c-a45e-e6ba6e9839d0.jpg)
+
+
+
+
