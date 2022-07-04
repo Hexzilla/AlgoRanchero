@@ -2387,11 +2387,24 @@
   > img {
   margin-left: 105px;
 }
+.freeBox__jBr3 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
 .img__v0TX5 {
   position: relative;
   object-fit: cover;
   max-width: 100%;
   box-shadow: 4px 8px 24px 0px #00000080;
+  display: none !important;
 }
 .img__v0TX5 > picture > img {
   object-fit: cover;
@@ -2417,15 +2430,15 @@
   width: 1em;
   height: 1em;
 }
-.img__fQ5S {
+.img__b4RTd {
   position: relative;
   object-fit: cover;
   max-width: 100%;
 }
-.img__fQ5S > picture > img {
+.img__b4RTd > picture > img {
   object-fit: cover;
 }
-.img__fQ5S > .__wab_img-spacer > img {
+.img__b4RTd > .__wab_img-spacer > img {
   object-fit: cover;
 }
 .flexBox {

@@ -67,9 +67,16 @@ export type PlasmicPlay__VariantsArgs = {};
 type VariantPropType = keyof PlasmicPlay__VariantsArgs;
 export const PlasmicPlay__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicPlay__ArgsType = {};
+export type PlasmicPlay__ArgsType = {
+  unity?: React.ReactNode;
+  ticketImage?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicPlay__ArgsType;
-export const PlasmicPlay__ArgProps = new Array<ArgPropType>();
+export const PlasmicPlay__ArgProps = new Array<ArgPropType>(
+  "unity",
+  "ticketImage"
+);
 
 export type PlasmicPlay__OverridesType = {
   root?: p.Flex<"div">;
@@ -146,6 +153,8 @@ export type PlasmicPlay__OverridesType = {
 };
 
 export interface DefaultPlayProps {
+  unity?: React.ReactNode;
+  ticketImage?: React.ReactNode;
   className?: string;
 }
 
@@ -1550,24 +1559,32 @@ function PlasmicPlay__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___9An3Z)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__v0TX5)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: unityPlaceholderpngJrtDf8Gx9,
-                    fullWidth: 800,
-                    fullHeight: 534,
-                    aspectRatio: undefined
-                  }}
-                />
+                <div className={classNames(projectcss.all, sty.freeBox__jBr3)}>
+                  {p.renderPlasmicSlot({
+                    defaultContents: null,
+                    value: args.unity
+                  })}
+                </div>
 
+                {true ? (
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__v0TX5)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: unityPlaceholderpngJrtDf8Gx9,
+                      fullWidth: 800,
+                      fullHeight: 534,
+                      aspectRatio: undefined
+                    }}
+                  />
+                ) : null}
                 {true ? (
                   <Button
                     data-plasmic-name={"useTicket"}
@@ -1577,25 +1594,30 @@ function PlasmicPlay__RenderFunc(props: {
                     {"Use Ticket"}
                   </Button>
                 ) : null}
+                {p.renderPlasmicSlot({
+                  defaultContents: (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__b4RTd)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      link={"https://ab2.gallery/asset/794691991" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: needpngOaRl3Fxd4,
+                        fullWidth: 300,
+                        fullHeight: 600,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  ),
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__fQ5S)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  link={"https://ab2.gallery/asset/794691991" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: needpngOaRl3Fxd4,
-                    fullWidth: 300,
-                    fullHeight: 600,
-                    aspectRatio: undefined
-                  }}
-                />
+                  value: args.ticketImage
+                })}
               </p.Stack>
 
               {true ? (

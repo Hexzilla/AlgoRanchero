@@ -5,6 +5,7 @@ import { SignedTx } from "@randlabs/myalgo-connect";
 import { useAlgoContext } from "./useAlgoContext";
 
 const BASE_URL = "https://node.algoexplorerapi.io";
+const ASSET_ID = 794691991;
 const token = {
   'Access-Control-Allow-Origin': '*',
   'X-API-Key': '9RteuDnvR06kVoU1tMdE69Gxajzb4479ajWR7FKe',
@@ -106,9 +107,29 @@ const useAssets = () => {
     [wallet, account]
   );
 
+  const getAssets = useCallback(() => {
+    const getAssetsAsync = async (address: string) => {
+      try {
+        const url = `${BASE_URL}/v2/accounts/${address}/assets/${ASSET_ID}`;
+        const res = await axios.get(url, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        console.log('res', res)
+        return res.data;
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    }
+    return account? getAssetsAsync(account.address) : Promise.resolve(null);
+  }, [account])
+
   return {
     signTransaction,
     sendAssets,
+    getAssets,
   };
 };
 
