@@ -5,7 +5,7 @@ import {
   DefaultPlayProps,
 } from "./plasmic/online_course_or_book/PlasmicPlay";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import * as notification from "./Notification";
+//import * as notification from "./Notification";
 import useAssets from "../hooks/useAssets";
 import useWallet from "../hooks/useWallet";
 
@@ -16,9 +16,9 @@ export interface PlayProps extends DefaultPlayProps {}
 
 const unityContext = new UnityContext({
   loaderUrl: "Build/1.loader.js",
-  dataUrl: "Build/1.data",
-  frameworkUrl: "Build/1.framework.js",
-  codeUrl: "Build/1.wasm",
+  dataUrl: "Build/1.data.unityweb",
+  frameworkUrl: "Build/1.framework.js.unityweb",
+  codeUrl: "Build/1.wasm.unityweb",
 });
 
 function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
@@ -29,9 +29,9 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
   React.useEffect(() => {
     if (account) {
       getAssets().then((result) => {
-        console.log("result", result);
         if (result["asset-holding"]["amount"] > 0) {
           setHolding(true);
+          unityContext.send("AccessController", "InsertToken");
         }
       });
     }
@@ -66,13 +66,17 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
           <img
             src="images/ticket_to_ride.png"
             alt="ticket_to_ride"
-            onClick={() => window.open("https://ab.gallery", "_blank")}
+            onClick={() =>
+              window.open("https://ab2.gallery/asset/794691991", "_blank")
+            }
           />
         ) : (
           <img
             src="images/need.png"
             alt="Need Ticket"
-            onClick={() => console.log("")}
+            onClick={() =>
+              window.open("https://ab2.gallery/asset/794691991", "_blank")
+            }
           />
         )}
       </div>
@@ -80,7 +84,22 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
   };
 
   return (
-    <PlasmicPlay root={{ ref }} {...props} ticketImage={ticketImageView()} />
+    <PlasmicPlay
+      root={{ ref }}
+      {...props}
+      ticketImage={ticketImageView()}
+      unity={
+        <Unity
+          unityContext={unityContext}
+          style={{
+            height: "100%",
+            width: 913,
+            border: "0",
+            background: "grey",
+          }}
+        />
+      }
+    />
   );
 }
 
