@@ -324,6 +324,11 @@
           "id": "LthswhDjs",
           "name": "ticket.png",
           "filePath": "plasmic/online_course_or_book/images/ticketpng.png"
+        },
+        {
+          "id": "oaRL3fxd4",
+          "name": "need.png",
+          "filePath": "plasmic/algo_ranchero/images/needpng.png"
         }
       ],
       "indirect": false,

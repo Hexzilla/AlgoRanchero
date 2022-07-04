@@ -44,8 +44,6 @@ import sty from "./PlasmicPlay.module.css"; // plasmic-import: cyPzhZcfbnL/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: H6IPjSst5JB-0J/icon
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: p88DWBUZGglkig/icon
 import _227601RightArrowIconsvgIcon from "./icons/PlasmicIcon___227601RightArrowIconsvg"; // plasmic-import: W8HTR3EfJvw0K1/icon
-import unityPlaceholderpngJrtDf8Gx9 from "./images/unityPlaceholderpng.png"; // plasmic-import: jrtDF8Gx9/picture
-import ticketpngLthswhDjs from "./images/ticketpng.png"; // plasmic-import: LthswhDjs/picture
 import westworldpngJ1JTeMPo from "./images/westworldpng.png"; // plasmic-import: J1jTeM-po/picture
 import redDeadLogopngZ1OHowXkU from "./images/redDeadLogopng.png"; // plasmic-import: Z1OHowXkU/picture
 import algoLogopngDgNfekrbw from "./images/algoLogopng.png"; // plasmic-import: DgNfekrbw/picture
@@ -54,6 +52,9 @@ import suelpngLk9JTWb7 from "./images/suelpng.png"; // plasmic-import: lk9j-tWb7
 import image7FWZByIpaTsn0X from "./images/image7.png"; // plasmic-import: fW-ZByIPATsn0x/picture
 import tradingpngA6GNyNdcC from "./images/tradingpng.png"; // plasmic-import: A6gNYNdcC/picture
 import image40BZjm4KxMf99Q from "./images/image4.png"; // plasmic-import: 0BZjm4kx-mf99q/picture
+import unityPlaceholderpngJrtDf8Gx9 from "./images/unityPlaceholderpng.png"; // plasmic-import: jrtDF8Gx9/picture
+import needpngOaRl3Fxd4 from "../algo_ranchero/images/needpng.png"; // plasmic-import: oaRL3fxd4/picture
+import ticketpngLthswhDjs from "./images/ticketpng.png"; // plasmic-import: LthswhDjs/picture
 import logoAlgoRancheroSmallpngDmICtonR7 from "./images/logoAlgoRancheroSmallpng.png"; // plasmic-import: dmICtonR7/picture
 import icons8TwittersvgJfiQjlzmWcrIml from "./images/icons8Twittersvg.svg"; // plasmic-import: JfiQjlzmWCRIml/picture
 import icons8FacebooksvgOTwwNjgjUc06BX from "./images/icons8Facebooksvg.svg"; // plasmic-import: oTwwNJGJUc06bX/picture
@@ -73,14 +74,6 @@ export const PlasmicPlay__ArgProps = new Array<ArgPropType>();
 export type PlasmicPlay__OverridesType = {
   root?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
-  section1?: p.Flex<"section">;
-  container?: p.Flex<"div">;
-  useTicket?: p.Flex<typeof Button>;
-  flexBox?: p.Flex<"div">;
-  bannerImage?: p.Flex<"div">;
-  contentBlock?: p.Flex<"div">;
-  mainHeading?: p.Flex<"h1">;
-  peraBanner?: p.Flex<"p">;
   section2?: p.Flex<"section">;
   subHeading?: p.Flex<"h2">;
   logoContainer?: p.Flex<"div">;
@@ -130,6 +123,14 @@ export type PlasmicPlay__OverridesType = {
   avatarImage?: p.Flex<"div">;
   section9?: p.Flex<"section">;
   svg?: p.Flex<"svg">;
+  section1?: p.Flex<"section">;
+  container?: p.Flex<"div">;
+  useTicket?: p.Flex<typeof Button>;
+  flexBox?: p.Flex<"div">;
+  bannerImage?: p.Flex<"div">;
+  contentBlock?: p.Flex<"div">;
+  mainHeading?: p.Flex<"h1">;
+  peraBanner?: p.Flex<"p">;
   footer?: p.Flex<"footer">;
   footerLogo?: p.Flex<"div">;
   logo2?: p.Flex<typeof p.PlasmicImg>;
@@ -196,161 +197,6 @@ function PlasmicPlay__RenderFunc(props: {
             data-plasmic-override={overrides.navbar}
             className={classNames("__wab_instance", sty.navbar)}
           />
-
-          <section
-            data-plasmic-name={"section1"}
-            data-plasmic-override={overrides.section1}
-            className={classNames(projectcss.all, sty.section1)}
-          >
-            <div
-              data-plasmic-name={"container"}
-              data-plasmic-override={overrides.container}
-              className={classNames(projectcss.all, sty.container)}
-            >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__v0TX5)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: unityPlaceholderpngJrtDf8Gx9,
-                  fullWidth: 800,
-                  fullHeight: 534,
-                  aspectRatio: undefined
-                }}
-              />
-
-              <Button
-                data-plasmic-name={"useTicket"}
-                data-plasmic-override={overrides.useTicket}
-                className={classNames("__wab_instance", sty.useTicket)}
-              >
-                {"Use Ticket"}
-              </Button>
-
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"flexBox"}
-                  data-plasmic-override={overrides.flexBox}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.flexBox)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.column__flLuE)}
-                  >
-                    <div
-                      data-plasmic-name={"bannerImage"}
-                      data-plasmic-override={overrides.bannerImage}
-                      className={classNames(projectcss.all, sty.bannerImage)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__akm0)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"1089px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: ticketpngLthswhDjs,
-                          fullWidth: 511,
-                          fullHeight: 797,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    className={classNames(projectcss.all, sty.column__yLjU0)}
-                  >
-                    <div
-                      data-plasmic-name={"contentBlock"}
-                      data-plasmic-override={overrides.contentBlock}
-                      className={classNames(projectcss.all, sty.contentBlock)}
-                    >
-                      <h1
-                        data-plasmic-name={"mainHeading"}
-                        data-plasmic-override={overrides.mainHeading}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.mainHeading
-                        )}
-                      >
-                        {
-                          "Your Ticket Grants Access to The Pre-Release World of Algo Ranchero"
-                        }
-                      </h1>
-
-                      <p
-                        data-plasmic-name={"peraBanner"}
-                        data-plasmic-override={overrides.peraBanner}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          sty.peraBanner
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__h5Klx
-                          )}
-                        >
-                          {
-                            "If you own an Access Ticket, you have unlimited access to the Algo Ranchero world as it's being built.\n\nOne ticket is all you need. It doesn't get burned or destroyed when you access the game-world.\n\nYou'll be able to see the world evolve and grow as you have access to the untested wilderness and rough towns that will become the final game-world.\n\nEnjoy this exclusive access to the behind-the-scenes peek into how this game is coming together. "
-                          }
-                        </div>
-                      </p>
-
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__yvd0K
-                          )}
-                        >
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button___8EGZf
-                            )}
-                            color={"red" as const}
-                            link={
-                              "https://ab2.gallery/asset/794691991" as const
-                            }
-                            shape={"rounded" as const}
-                            showEndIcon={true}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__zdO0Z
-                              )}
-                            >
-                              {"Get A Ticket"}
-                            </div>
-                          </Button>
-                        </div>
-                      ) : null}
-                    </div>
-                  </div>
-                </p.Stack>
-              ) : null}
-            </div>
-          </section>
 
           {true ? (
             <p.Stack
@@ -1689,6 +1535,188 @@ function PlasmicPlay__RenderFunc(props: {
             </section>
           ) : null}
 
+          <section
+            data-plasmic-name={"section1"}
+            data-plasmic-override={overrides.section1}
+            className={classNames(projectcss.all, sty.section1)}
+          >
+            <div
+              data-plasmic-name={"container"}
+              data-plasmic-override={overrides.container}
+              className={classNames(projectcss.all, sty.container)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___9An3Z)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__v0TX5)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: unityPlaceholderpngJrtDf8Gx9,
+                    fullWidth: 800,
+                    fullHeight: 534,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                {true ? (
+                  <Button
+                    data-plasmic-name={"useTicket"}
+                    data-plasmic-override={overrides.useTicket}
+                    className={classNames("__wab_instance", sty.useTicket)}
+                  >
+                    {"Use Ticket"}
+                  </Button>
+                ) : null}
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__fQ5S)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  link={"https://ab2.gallery/asset/794691991" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: needpngOaRl3Fxd4,
+                    fullWidth: 300,
+                    fullHeight: 600,
+                    aspectRatio: undefined
+                  }}
+                />
+              </p.Stack>
+
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"flexBox"}
+                  data-plasmic-override={overrides.flexBox}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.flexBox)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__flLuE)}
+                  >
+                    <div
+                      data-plasmic-name={"bannerImage"}
+                      data-plasmic-override={overrides.bannerImage}
+                      className={classNames(projectcss.all, sty.bannerImage)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__akm0)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"1089px" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: ticketpngLthswhDjs,
+                          fullWidth: 511,
+                          fullHeight: 797,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__yLjU0)}
+                  >
+                    <div
+                      data-plasmic-name={"contentBlock"}
+                      data-plasmic-override={overrides.contentBlock}
+                      className={classNames(projectcss.all, sty.contentBlock)}
+                    >
+                      <h1
+                        data-plasmic-name={"mainHeading"}
+                        data-plasmic-override={overrides.mainHeading}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.__wab_text,
+                          sty.mainHeading
+                        )}
+                      >
+                        {
+                          "Your Ticket Grants Access to The Pre-Release World of Algo Ranchero"
+                        }
+                      </h1>
+
+                      <p
+                        data-plasmic-name={"peraBanner"}
+                        data-plasmic-override={overrides.peraBanner}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.p,
+                          sty.peraBanner
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__h5Klx
+                          )}
+                        >
+                          {
+                            "If you own an Access Ticket, you have unlimited access to the Algo Ranchero world as it's being built.\n\nOne ticket is all you need. It doesn't get burned or destroyed when you access the game-world.\n\nYou'll be able to see the world evolve and grow as you have access to the untested wilderness and rough towns that will become the final game-world.\n\nEnjoy this exclusive access to the behind-the-scenes peek into how this game is coming together. "
+                          }
+                        </div>
+                      </p>
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__yvd0K
+                          )}
+                        >
+                          <Button
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button___8EGZf
+                            )}
+                            color={"red" as const}
+                            link={
+                              "https://ab2.gallery/asset/794691991" as const
+                            }
+                            shape={"rounded" as const}
+                            showEndIcon={true}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__zdO0Z
+                              )}
+                            >
+                              {"Get A Ticket"}
+                            </div>
+                          </Button>
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+                </p.Stack>
+              ) : null}
+            </div>
+          </section>
+
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -1966,14 +1994,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navbar",
-    "section1",
-    "container",
-    "useTicket",
-    "flexBox",
-    "bannerImage",
-    "contentBlock",
-    "mainHeading",
-    "peraBanner",
     "section2",
     "subHeading",
     "logoContainer",
@@ -2023,6 +2043,14 @@ const PlasmicDescendants = {
     "avatarImage",
     "section9",
     "svg",
+    "section1",
+    "container",
+    "useTicket",
+    "flexBox",
+    "bannerImage",
+    "contentBlock",
+    "mainHeading",
+    "peraBanner",
     "footer",
     "footerLogo",
     "logo2",
@@ -2037,37 +2065,6 @@ const PlasmicDescendants = {
     "vimeo"
   ],
   navbar: ["navbar"],
-  section1: [
-    "section1",
-    "container",
-    "useTicket",
-    "flexBox",
-    "bannerImage",
-    "contentBlock",
-    "mainHeading",
-    "peraBanner"
-  ],
-  container: [
-    "container",
-    "useTicket",
-    "flexBox",
-    "bannerImage",
-    "contentBlock",
-    "mainHeading",
-    "peraBanner"
-  ],
-  useTicket: ["useTicket"],
-  flexBox: [
-    "flexBox",
-    "bannerImage",
-    "contentBlock",
-    "mainHeading",
-    "peraBanner"
-  ],
-  bannerImage: ["bannerImage"],
-  contentBlock: ["contentBlock", "mainHeading", "peraBanner"],
-  mainHeading: ["mainHeading"],
-  peraBanner: ["peraBanner"],
   section2: ["section2", "subHeading", "logoContainer"],
   subHeading: ["subHeading"],
   logoContainer: ["logoContainer"],
@@ -2215,6 +2212,37 @@ const PlasmicDescendants = {
   avatarImage: ["avatarImage"],
   section9: ["section9", "svg"],
   svg: ["svg"],
+  section1: [
+    "section1",
+    "container",
+    "useTicket",
+    "flexBox",
+    "bannerImage",
+    "contentBlock",
+    "mainHeading",
+    "peraBanner"
+  ],
+  container: [
+    "container",
+    "useTicket",
+    "flexBox",
+    "bannerImage",
+    "contentBlock",
+    "mainHeading",
+    "peraBanner"
+  ],
+  useTicket: ["useTicket"],
+  flexBox: [
+    "flexBox",
+    "bannerImage",
+    "contentBlock",
+    "mainHeading",
+    "peraBanner"
+  ],
+  bannerImage: ["bannerImage"],
+  contentBlock: ["contentBlock", "mainHeading", "peraBanner"],
+  mainHeading: ["mainHeading"],
+  peraBanner: ["peraBanner"],
   footer: [
     "footer",
     "footerLogo",
@@ -2241,14 +2269,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
-  section1: "section";
-  container: "div";
-  useTicket: typeof Button;
-  flexBox: "div";
-  bannerImage: "div";
-  contentBlock: "div";
-  mainHeading: "h1";
-  peraBanner: "p";
   section2: "section";
   subHeading: "h2";
   logoContainer: "div";
@@ -2298,6 +2318,14 @@ type NodeDefaultElementType = {
   avatarImage: "div";
   section9: "section";
   svg: "svg";
+  section1: "section";
+  container: "div";
+  useTicket: typeof Button;
+  flexBox: "div";
+  bannerImage: "div";
+  contentBlock: "div";
+  mainHeading: "h1";
+  peraBanner: "p";
   footer: "footer";
   footerLogo: "div";
   logo2: typeof p.PlasmicImg;
@@ -2370,14 +2398,6 @@ export const PlasmicPlay = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
-    section1: makeNodeComponent("section1"),
-    container: makeNodeComponent("container"),
-    useTicket: makeNodeComponent("useTicket"),
-    flexBox: makeNodeComponent("flexBox"),
-    bannerImage: makeNodeComponent("bannerImage"),
-    contentBlock: makeNodeComponent("contentBlock"),
-    mainHeading: makeNodeComponent("mainHeading"),
-    peraBanner: makeNodeComponent("peraBanner"),
     section2: makeNodeComponent("section2"),
     subHeading: makeNodeComponent("subHeading"),
     logoContainer: makeNodeComponent("logoContainer"),
@@ -2427,6 +2447,14 @@ export const PlasmicPlay = Object.assign(
     avatarImage: makeNodeComponent("avatarImage"),
     section9: makeNodeComponent("section9"),
     svg: makeNodeComponent("svg"),
+    section1: makeNodeComponent("section1"),
+    container: makeNodeComponent("container"),
+    useTicket: makeNodeComponent("useTicket"),
+    flexBox: makeNodeComponent("flexBox"),
+    bannerImage: makeNodeComponent("bannerImage"),
+    contentBlock: makeNodeComponent("contentBlock"),
+    mainHeading: makeNodeComponent("mainHeading"),
+    peraBanner: makeNodeComponent("peraBanner"),
     footer: makeNodeComponent("footer"),
     footerLogo: makeNodeComponent("footerLogo"),
     logo2: makeNodeComponent("logo2"),

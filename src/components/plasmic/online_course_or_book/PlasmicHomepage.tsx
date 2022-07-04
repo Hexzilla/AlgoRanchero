@@ -388,9 +388,42 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text__fmum4
                         )}
                       >
-                        {
-                          "Play as \nYour go-to guide for both B2B and B2C digital marketing pages.\n\nWe will share with you the hard-won tips and tricks we've gained from developing over 75 high-converting landing pages clients across multiple industries. Everything from ad image and copy, to page design and conversion strategies are shared here in broad strokes for you to take home and deploy."
-                        }
+                        <React.Fragment>
+                          <React.Fragment>
+                            {"Play as the hero in your own adventure. "}
+                          </React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Algo Ranchero  "}
+                          </span>
+                          <React.Fragment>
+                            {
+                              "is the first open-world play-to-earn Western Adventure game. \nIt uses the Algorand blockchain and wallet to let players keep their loot and trade with others. As the game expands, the world will grow along with the adventure. So get a "
+                            }
+                          </React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Ticket to Ride "}
+                          </span>
+                          <React.Fragment>{"and saddle up to "}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Algo Ranchero!"}
+                          </span>
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
                       </div>
                     </p>
 
@@ -959,7 +992,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      "The first major bit of functionality will be to allow certain VIPs, influencers and whales to get early access to the game world. So our first NFT is the Ticket to Ride. When purchased, the owner will be able to board the train and travel to Algo Ranchero"
                     }
                   </p>
                 </div>
@@ -985,7 +1018,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      "Our next NFTs will be a series of characters that will allow you to change your hero's appearance and even add special skills. The character NFTs will be dropped over a period of time as they are revealed. "
                     }
                   </p>
                 </div>
@@ -1011,7 +1044,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      "The open-world nature of Algo Ranchero contributes to secret and exclusive areas that are unlocked with Game World NFTs. These can be won by playing Algo Ranchero or purchased. "
                     }
                   </p>
                 </div>
@@ -1037,7 +1070,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      "Algo Ranchero will have special missions that can only be accessed by holding special mission NFTs. These will primarily be collaborations with other artists on Algorand. "
                     }
                   </p>
                 </div>
@@ -1051,7 +1084,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h2__pu73K
                     )}
                   >
-                    {"5. Unlock Missions"}
+                    {"5. Buy Land"}
                   </h2>
 
                   <p
@@ -1063,7 +1096,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      "As the game world expands, we'll offer players the opportunity to own a part of Algo Ranchero. Players can purchase open land as well as existing shops and locations. The land will offer customization of the game world through blockchain ownership."
                     }
                   </p>
                 </div>
@@ -1089,7 +1122,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      "The next thing we'll bring players of Algo Ranchero is the ability to duel. This western pastime is will offer action and rewards through a nerve-racking mini-game consisting of a tense standoff with an gun-toting opponent. "
                     }
                   </p>
                 </div>

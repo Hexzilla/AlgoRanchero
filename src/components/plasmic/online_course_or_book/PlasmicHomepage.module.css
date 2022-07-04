@@ -405,6 +405,7 @@
   font-weight: 500;
   color: var(--token-bBlb1RZ46rCBqi);
   letter-spacing: 1px;
+  padding-bottom: 9px;
 }
 .freeBox__tguWd {
   display: flex;
@@ -1390,6 +1391,7 @@
   height: auto;
   max-width: 800px;
   margin-top: 0px;
+  padding-top: 0px;
   min-width: 0;
 }
 .p__zAjf4 {
