@@ -23,7 +23,8 @@ It uses the Algorand blockchain and wallet to let players keep their loot and tr
 
 5. **Buy Land** - As the game world expands, we'll offer players the opportunity to own a part of Algo Ranchero. Players can purchase open land as well as existing shops and locations. The land will offer customization of the game world through blockchain ownership.
 
-6. **Unlock Duels** - The next thing we'll bring players of Algo Ranchero is the ability to duel. This western pastime is will offer action and rewards through a nerve-racking mini-game consisting of a tense standoff with an gun-toting opponent. 
+6. **Unlock Duels** - The next thing we'll bring players of Algo Ranchero is the ability to duel. This western pastime is will offer action and rewards through a nerve-racking mini-game consisting of a tense standoff with an gun-toting opponent.
+
 ![suel](https://user-images.githubusercontent.com/2120817/177050230-5daced75-4bd5-4f69-8b30-07089ac5a686.png)
 
 ### Ticket to Ride
